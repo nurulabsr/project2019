@@ -1,1 +1,1 @@
-    class Triangle extends TwoDShape {
+get
