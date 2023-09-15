@@ -12,12 +12,18 @@ class Vehicle {
     return (double) miles / mpg;
     }
 
+    int getPassengers() { 
+        return passengers; 
+    }
+    int getfuelcap(){
+     return fuelcap;
+    } 
+
+
 }
 class Truck extends Vehicle {
-    private int cargocap; 
+ private int cargocap; 
  Truck(int p, int f, int m, int c) {
-    /* Initialize Vehicle members using
-    Vehicle's constructor. */
     super(p, f, m);
     cargocap = c;
  }
@@ -34,7 +40,10 @@ class TruckDemo {
     System.out.println("Semi can carry " + semi.getCargo() + " pounds.");
     System.out.println("To go " + dist + " miles semi needs " + gallons + " gallons of fuel.\n");
     gallons = pickup.fuelNeeded(dist);
+    System.out.println("Number of passenger " + semi.getPassengers() );
     System.out.println("Pickup can carry " + pickup.getCargo() + " pounds.");
     System.out.println("To go " + dist + " miles pickup needs " + gallons + " gallons of fuel.");
+
+    
  }
 }
