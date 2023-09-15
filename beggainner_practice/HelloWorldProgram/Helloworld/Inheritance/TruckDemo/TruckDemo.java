@@ -7,22 +7,11 @@ class Vehicle {
     fuelcap = f;
     mpg = m;
     }
- // Return the range.
- int range() {
-    return mpg * fuelcap;
-    }
  // Compute fuel needed for a given distance.
  double fuelNeeded(int miles) {
     return (double) miles / mpg;
     }
 
-
-    int getPassengers() { return passengers; }
-    void setPassengers(int p) { passengers = p; }
-    int getFuelcap() { return fuelcap; }
-    void setFuelcap(int f) { fuelcap = f; }
-    int getMpg() { return mpg; }
-    void setMpg(int m) { mpg = m; }
 }
 class Truck extends Vehicle {
     private int cargocap; 
@@ -33,7 +22,6 @@ class Truck extends Vehicle {
     cargocap = c;
  }
     int getCargo() { return cargocap; }
-    void putCargo(int c) { cargocap = c; }
 }
 
 class TruckDemo {
@@ -41,7 +29,7 @@ class TruckDemo {
     Truck semi = new Truck(2, 200, 7, 44000);
     Truck pickup = new Truck(3, 28, 15, 2000);
     double gallons;
-    int dist = 252;
+    int dist = 292;
     gallons = semi.fuelNeeded(dist);
     System.out.println("Semi can carry " + semi.getCargo() + " pounds.");
     System.out.println("To go " + dist + " miles semi needs " + gallons + " gallons of fuel.\n");
