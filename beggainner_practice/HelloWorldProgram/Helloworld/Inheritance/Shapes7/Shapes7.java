@@ -59,9 +59,6 @@ class Triangle extends TwoDShape {
 
 
 
-
-
-
 class Shapes7 {
  public static void main(String[] args) {
     Triangle t1 = new Triangle("outlined", 8.0, 12.0);
