@@ -65,6 +65,7 @@ class Triangle extends TwoDShape {
 class Shapes7 {
  public static void main(String[] args) {
     Triangle t1 = new Triangle("outlined", 8.0, 12.0);
+   //  Triangle t1 = new Triangle(100);
     // make a copy of t1
     Triangle t2 = new Triangle(t1);
     System.out.println("Info for t1: ");
