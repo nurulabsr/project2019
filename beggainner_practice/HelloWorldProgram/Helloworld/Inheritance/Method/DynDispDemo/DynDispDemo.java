@@ -19,6 +19,12 @@ class DynDispDemo {
     Sup superOb = new Sup();
     Sub1 subOb1 = new Sub1();
     Sub2 subOb2 = new Sub2();
+
+    System.out.println("______________Before__________\n");
+    superOb.who();
+    subOb1.who();
+    subOb2.who();
+    System.out.println("_______________After___________\n");
     Sup supRef;
     supRef = superOb;
     supRef.who();
