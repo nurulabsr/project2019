@@ -7,18 +7,21 @@ class TwoDShape {
         width = height = 0.0;
         name = "none";
     }
+
     // Parameterized constructor.
     TwoDShape(double w, double h, String n) {
         width = w;
         height = h;
         name = n;
     }
+
     // Construct object with equal width and height.
     TwoDShape(double x, String n) {
         width = height = x;
         name = n;
     }
 
+   // Construct an object from an object.
     TwoDShape(TwoDShape ob) {
         width = ob.width;
         height = ob.height;
@@ -37,7 +40,7 @@ class TwoDShape {
         return 0.0;
     }
 }
-// A subclass of TwoDShape for triangles.
+
 class Triangle extends TwoDShape {
     private String style;
     // A default constructor.
