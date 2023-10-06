@@ -1,4 +1,4 @@
-class Shape{
+final class Shape{
     Double dimention1;
     Double dimention2;
     Shape(double dimention_1, double dimention_2){
@@ -11,7 +11,7 @@ class Shape{
 }
 
 
-class Rectangle extends Shape{
+class Rectangle extends Shape{  // error, final class don't extend
     Rectangle(double dimention1, double dimention2){
     super(dimention2, dimention2);
     }
